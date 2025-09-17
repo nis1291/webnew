@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyayamitra - India's Suite for Judicial & Governance Excellence</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+</head>
+<body>
+    <!-- Premium Loading Screen with Lottie -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-content">
+            <div class="lottie-loading" id="loading-animation"></div>
+            <h2>Initializing Nyayamitra AI Suite</h2>
+            <div class="loading-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Clean Animated Background -->
+    <div class="animated-bg">
+        <div class="particles"></div>
+        <div class="floating-elements">
+            <div class="floating-element" style="--delay: 0s; --duration: 20s;"></div>
+            <div class="floating-element" style="--delay: 5s; --duration: 25s;"></div>
+            <div class="floating-element" style="--delay: 10s; --duration: 30s;"></div>
+            <div class="floating-element" style="--delay: 15s; --duration: 35s;"></div>
+        </div>
+        <div class="floating-orbs">
+            <div class="orb"></div>
+            <div class="orb"></div>
+            <div class="orb"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">Nyayamitra</span>
+                <span class="logo-tagline">India's Suite for Judicial & Governance Excellence</span>
+            </a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <div class="dropdown">
+                    <a href="#" class="nav-link">Our AI Suite <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-header">The Nyayamitra Intelligent Automation Suite</div>
+                        <a href="#juriscript" class="dropdown-link">JuriScript: For Judicial Drafting</a>
+                        <a href="#insightlens" class="dropdown-link">InsightLens: For Administrative Analysis</a>
+                        <a href="#leximind" class="dropdown-link">LexiMind: For Universal Research</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="nav-link">Solutions For <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-header">Purpose-Built for Your Institution</div>
+                        <a href="#" class="dropdown-link">Judicial & Quasi-Judicial Bodies</a>
+                        <a href="#" class="dropdown-link">Government Departments & PSUs</a>
+                    </div>
+                </div>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#contact" class="nav-link">Contact Us</a>
+                <a href="#" class="login-button">Platform Login</a>
+                <a href="#" class="cta-button">Request a Confidential Demo</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- World-Class Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-text">🚀 India's Most Advanced AI Platform</span>
+                    <div class="badge-glow"></div>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line main-title">The Future of</span>
+                    <span class="title-line gradient-text">Justice & Governance</span>
+                    <span class="title-line sub-title">is Here</span>
+                </h1>
+                <div class="hero-description">
+                    <p class="hero-subtitle">
+                        Experience the world's most sophisticated AI suite, where cutting-edge technology meets the noble pursuit of justice. Transform your institution with intelligent automation that delivers <strong>90% faster judgments</strong> and <strong>1000x smarter governance</strong>.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">4.4M+</span>
+                            <span class="stat-label">Cases Processed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">99.9%</span>
+                            <span class="stat-label">Accuracy Rate</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">AI Support</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#" class="cta-button primary premium">
+                        <span class="button-text">Experience the Revolution</span>
+                        <div class="button-glow"></div>
+                        <i class="fas fa-rocket"></i>
+                    </a>
+                    <a href="#" class="cta-button secondary">
+                        <span>Watch Demo</span>
+                        <i class="fas fa-play"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-animation">
+                    <div class="floating-cards">
+                        <div class="floating-card card-1" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-icon">
+                                <div class="lottie-icon" id="gavel-animation"></div>
+                            </div>
+                            <div class="card-content">
+                                <h4>JuriScript AI</h4>
+                                <p>Intelligent Judgment Drafting</p>
+                                <div class="card-metric">
+                                    <span class="metric-value">90%</span>
+                                    <span class="metric-label">Faster</span>
+                                </div>
+                            </div>
+                            <div class="card-glow"></div>
+                        </div>
+                        <div class="floating-card card-2" data-aos="fade-up" data-aos-delay="400">
+                            <div class="card-icon">
+                                <div class="lottie-icon" id="brain-animation"></div>
+                            </div>
+                            <div class="card-content">
+                                <h4>InsightLens AI</h4>
+                                <p>Document Intelligence</p>
+                                <div class="card-metric">
+                                    <span class="metric-value">1000x</span>
+                                    <span class="metric-label">Smarter</span>
+                                </div>
+                            </div>
+                            <div class="card-glow"></div>
+                        </div>
+                        <div class="floating-card card-3" data-aos="fade-up" data-aos-delay="600">
+                            <div class="card-icon">
+                                <div class="lottie-icon" id="search-animation"></div>
+                            </div>
+                            <div class="card-content">
+                                <h4>LexiMind AI</h4>
+                                <p>Universal Research</p>
+                                <div class="card-metric">
+                                    <span class="metric-value">∞</span>
+                                    <span class="metric-label">Knowledge</span>
+                                </div>
+
+                            </div>
+                            <div class="card-glow"></div>
+                        </div>
+
+                    </div>
+                    <div class="hero-orb orb-1"></div>
+                    <div class="hero-orb orb-2"></div>
+                    <div class="hero-orb orb-3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-text">Discover the Future</div>
+            <div class="scroll-arrow">
+                <div class="lottie-icon" id="scroll-animation"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Critical Challenges Section -->
+    <section class="challenges-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">
+                    <span>⚡ The Challenge</span>
+                </div>
+                <h2>Two Critical Bottlenecks Holding Back India's Progress</h2>
+                <p>While India's institutions work tirelessly to serve the nation, outdated manual processes create massive inefficiencies. The result? Delayed justice, administrative bottlenecks, and frustrated citizens. It's time for a technological revolution that transforms how we deliver justice and governance.</p>
+            </div>
+            <div class="challenges-grid">
+                <div class="challenge-card premium" data-aos="fade-right" data-aos-delay="200">
+                    <div class="challenge-icon">
+                        <div class="lottie-icon" id="justice-animation"></div>
+                        <div class="icon-pulse"></div>
+                    </div>
+                    <div class="challenge-content">
+                        <h3>The Justice Crisis</h3>
+                        <p>With over 4.4 million cases pending, our judicial system is overwhelmed. Judges spend countless hours on mechanical drafting instead of focusing on legal reasoning and wisdom. The result? Justice delayed is justice denied.</p>
+                        <div class="challenge-metrics">
+                            <div class="metric">
+                                <span class="metric-number">4.4M+</span>
+                                <span class="metric-label">Pending Cases</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-number">3-5</span>
+                                <span class="metric-label">Years Average Delay</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="challenge-glow"></div>
+                </div>
+                <div class="challenge-card premium" data-aos="fade-left" data-aos-delay="400">
+                    <div class="challenge-icon">
+                        <div class="lottie-icon" id="governance-animation"></div>
+                        <div class="icon-pulse"></div>
+                    </div>
+                    <div class="challenge-content">
+                        <h3>The Governance Bottleneck</h3>
+                        <p>Government departments drown in paperwork, with manual processes consuming 70% of administrative time. Critical decisions are delayed, citizens wait longer, and public trust erodes. Red-tapism has become the enemy of progress.</p>
+                        <div class="challenge-metrics">
+                            <div class="metric">
+                                <span class="metric-number">70%</span>
+                                <span class="metric-label">Time Lost to Manual Work</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-number">6-12</span>
+                                <span class="metric-label">Months Processing Time</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="challenge-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Two Pillars Section -->
+    <section class="pillars-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Two Revolutionary Platforms. One Integrated Suite.</h2>
+                <p>Nyayamitra directly confronts these challenges with two powerful, specialized AI platforms. JuriScript empowers the judiciary, while InsightLens transforms administration. Together, they form the core of a comprehensive solution for a modern India.</p>
+            </div>
+            <div class="pillars-visual" data-aos="zoom-in" data-aos-delay="300">
+                <div class="pillar-connection">
+                    <div class="connection-line"></div>
+                    <div class="connection-pulse"></div>
+                </div>
+                <div class="pillars-grid">
+                    <div class="pillar-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="pillar-icon">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h3>JuriScript</h3>
+                        <p>AI-Assisted Adjudication</p>
+                    </div>
+                    <div class="pillar-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="pillar-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>InsightLens</h3>
+                        <p>Administrative Transformation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JuriScript Product Showcase -->
+    <section id="juriscript" class="product-showcase">
+        <div class="container">
+            <div class="product-card" data-aos="fade-up">
+                <div class="product-header">
+                    <div class="product-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <div class="product-title">
+                        <h3>JuriScript: The Apex of AI-Assisted Adjudication</h3>
+                        <p>Your personal assistant for judicial decision-making, reducing judgment drafting time by over 90%</p>
+                    </div>
+                </div>
+                <p class="product-description">JuriScript is a sophisticated cognitive partner for judges and members. It handles the entire mechanical process of drafting, allowing the judiciary to focus exclusively on legal reasoning and wisdom. By uploading the case file and providing core directives, judges can receive a complete, unbiased, and meticulously researched judgment draft in a fraction of the time.</p>
+                
+                <div class="process-flow">
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Ingest Case File</h4>
+                            <p>Secure upload and processing</p>
+                        </div>
+                        <div class="step-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Receive Judicial Insight</h4>
+                            <p>AI analysis and research</p>
+                        </div>
+                        <div class="step-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Draft with AI Precision</h4>
+                            <p>Automated judgment creation</p>
+                        </div>
+                        <div class="step-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Finalize with Judicial Review</h4>
+                            <p>Human oversight and approval</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-cta" data-aos="fade-up" data-aos-delay="500">
+                    <a href="#" class="cta-button">Explore JuriScript for Tribunals</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- InsightLens Product Showcase -->
+    <section id="insightlens" class="product-showcase alt">
+        <div class="container">
+            <div class="product-card" data-aos="fade-up">
+                <div class="product-header">
+                    <div class="product-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="product-title">
+                        <h3>InsightLens: The Engine of Administrative Transformation</h3>
+                        <p>Eradicate red-tapism and analyze voluminous files with instant, unerring accuracy</p>
+                    </div>
+                </div>
+                <p class="product-description">InsightLens is the definitive solution for government departments overwhelmed by paperwork. It is an intelligent document analysis platform that acts as an X-ray for your files, providing instant clarity. It automates compliance checks, extracts critical data, cross-references information across thousands of pages, and generates concise, actionable reports.</p>
+                
+                <div class="process-flow">
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Digitize & Ingest Files</h4>
+                            <p>Automated document processing</p>
+                        </div>
+                        <div class="step-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>AI Analysis & Compliance Check</h4>
+                            <p>Intelligent verification</p>
+                        </div>
+                        <div class="step-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Generate Insight Report</h4>
+                            <p>Comprehensive analysis</p>
+                        </div>
+                        <div class="step-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Enable Data-Driven Decisions</h4>
+                            <p>Actionable insights</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-cta" data-aos="fade-up" data-aos-delay="500">
+                    <a href="#" class="cta-button">Explore InsightLens for Government</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LexiMind Section -->
+    <section id="leximind" class="leximind-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>LexiMind: Your On-Demand AI Research Department</h2>
+                <p>Powering both judicial and administrative excellence is LexiMind, our standalone, high-tech research platform. Capable of investigating any legal, factual, or policy-related query, LexiMind autonomously scours public and legal databases to deliver comprehensive, curated reports in minutes.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h4>Natural Language Queries</h4>
+                    <p>Simply ask your research question in plain language - no complex search syntax required.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h4>Autonomous Web & Database Search</h4>
+                    <p>AI autonomously navigates legal databases, government portals, and public sources.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h4>Intelligent Synthesis</h4>
+                    <p>Reads, understands, and synthesizes information into curated, structured reports.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h4>Source Citation</h4>
+                    <p>Every piece of information is cited, ensuring verifiability and integrity.</p>
+                </div>
+            </div>
+            
+            <div class="leximind-cta" data-aos="fade-up" data-aos-delay="500">
+                <a href="#" class="cta-button">Learn About LexiMind's Capabilities</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integrated Power Section -->
+    <section class="integrated-power">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Knowledge → Analysis → Action. The Nyayamitra Workflow.</h2>
+                <p>While powerful alone, our platforms achieve unparalleled synergy when used together. A legal query researched in LexiMind can inform the analysis of a case file in InsightLens, with the combined insights seamlessly flowing into JuriScript to produce a deeply informed final judgment. This is the future of integrated institutional operations.</p>
+            </div>
+            <div class="workflow-visual" data-aos="zoom-in" data-aos-delay="300">
+                <div class="workflow-steps">
+                    <div class="workflow-step" data-aos="fade-up" data-aos-delay="100">
+                        <div class="workflow-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h4>LexiMind</h4>
+                        <p>Research</p>
+                    </div>
+                    <div class="workflow-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div class="workflow-step" data-aos="fade-up" data-aos-delay="200">
+                        <div class="workflow-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>InsightLens</h4>
+                        <p>Analysis</p>
+                    </div>
+                    <div class="workflow-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div class="workflow-step" data-aos="fade-up" data-aos-delay="300">
+                        <div class="workflow-icon">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h4>JuriScript</h4>
+                        <p>Action</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="stat-icon">
+                    <div class="lottie-icon" id="stat-1-animation"></div>
+                </div>
+                <div class="stat-number" data-count="90">0</div>
+                <div class="stat-label">Reduction in Drafting Time</div>
+                <div class="stat-suffix">%</div>
+            </div>
+            <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="stat-icon">
+                    <div class="lottie-icon" id="stat-2-animation"></div>
+                </div>
+                <div class="stat-number" data-count="1000">0</div>
+                <div class="stat-label">Faster Document Analysis</div>
+                <div class="stat-suffix">x</div>
+            </div>
+            <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="stat-icon">
+                    <div class="lottie-icon" id="stat-3-animation"></div>
+                </div>
+                <div class="stat-number" data-count="100">0</div>
+                <div class="stat-label">Compliance Accuracy</div>
+                <div class="stat-suffix">%</div>
+            </div>
+            <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="stat-icon">
+                    <div class="lottie-icon" id="stat-4-animation"></div>
+                </div>
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Available Support</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Lead the Digital Transformation of Your Institution</h2>
+                <p>Whether your mandate is to deliver justice or to govern effectively, the path to a more efficient and transparent future is here. Let our experts demonstrate how the Nyayamitra Suite can be tailored to solve your specific challenges.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="cta-button primary">
+                        <span>Request Your Confidential Platform Demonstration</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#" class="cta-button secondary">
+                        <span>Download Security Whitepaper</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Nyayamitra</h4>
+                    <p>Nyayamitra provides a premier SaaS platform empowering India's judicial and government institutions with a secure, integrated, and intelligent suite of AI tools. We are dedicated to enhancing operational velocity, transparency, and the delivery of justice nationwide.</p>
+                    <div class="footer-links">
+                        <a href="#">About Nyayamitra</a>
+                        <a href="#">Our Mission & Vision</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Our AI Suite</h4>
+                    <div class="footer-links">
+                        <a href="#juriscript">JuriScript</a>
+                        <a href="#insightlens">InsightLens</a>
+                        <a href="#leximind">LexiMind</a>
+                        <a href="#">Platform Architecture</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Solutions & Innovations</h4>
+                    <div class="footer-links">
+                        <a href="#">For RERA & Tribunals</a>
+                        <a href="#">For Government Departments</a>
+                        <a href="#">Custom Automation Services</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <div class="footer-links">
+                        <a href="#">Blog: Legal & GovTech Insights</a>
+                        <a href="#">Security Centre</a>
+                        <a href="#">FAQs</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect With Us</h4>
+                    <p>Nyayamitra Technologies Pvt. Ltd.</p>
+                    <p>Level 10, DLF Cyber City, Phase II, Gurugram, Haryana 122002</p>
+                    <p>info@nyayamitra.com</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nyayamitra Technologies Pvt. Ltd. All rights reserved.</p>
+                <p>Made in India, for a Stronger India.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+</html>

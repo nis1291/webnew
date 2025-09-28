@@ -67,7 +67,6 @@
                 </div>
                 <a href="#about" class="nav-link">About Us</a>
                 <a href="#contact" class="nav-link">Contact Us</a>
-                <a href="#" class="login-button">Platform Login</a>
                 <a href="#" class="cta-button">Request a Confidential Demo</a>
             </div>
             <div class="mobile-menu-toggle">
@@ -93,7 +92,7 @@
                 </h1>
                 <div class="hero-description">
                     <p class="hero-subtitle">
-                        Experience the world's most sophisticated AI suite, where cutting-edge technology meets the noble pursuit of justice. Transform your institution with intelligent automation that delivers <strong>90% faster judgments</strong> and <strong>1000x smarter governance</strong>.
+                        Experience the world's most sophisticated AI suite, where cutting-edge technology meets the noble pursuit of justice. Transform your institution with intelligent automation that delivers <strong>90% faster judgments</strong> and <strong>10x smarter governance</strong>.
                     </p>
                     <div class="hero-stats">
                         <div class="stat-item">
@@ -147,7 +146,7 @@
                                 <h4>InsightLens AI</h4>
                                 <p>Document Intelligence</p>
                                 <div class="card-metric">
-                                    <span class="metric-value">1000x</span>
+                                    <span class="metric-value">10x</span>
                                     <span class="metric-label">Smarter</span>
                                 </div>
                             </div>
@@ -490,7 +489,7 @@
                 <div class="stat-icon">
                     <div class="lottie-icon" id="stat-1-animation"></div>
                 </div>
-                <div class="stat-number" data-count="90">0</div>
+                <div class="stat-number" data-count="85">0</div>
                 <div class="stat-label">Reduction in Drafting Time</div>
                 <div class="stat-suffix">%</div>
             </div>
@@ -498,7 +497,7 @@
                 <div class="stat-icon">
                     <div class="lottie-icon" id="stat-2-animation"></div>
                 </div>
-                <div class="stat-number" data-count="1000">0</div>
+                <div class="stat-number" data-count="50">0</div>
                 <div class="stat-label">Faster Document Analysis</div>
                 <div class="stat-suffix">x</div>
             </div>
@@ -506,7 +505,7 @@
                 <div class="stat-icon">
                     <div class="lottie-icon" id="stat-3-animation"></div>
                 </div>
-                <div class="stat-number" data-count="100">0</div>
+                <div class="stat-number" data-count="98">0</div>
                 <div class="stat-label">Compliance Accuracy</div>
                 <div class="stat-suffix">%</div>
             </div>
@@ -519,6 +518,34 @@
             </div>
         </div>
     </section>
+
+    <script>
+    // Simple counter animation that works immediately
+    function animateCounters() {
+        const counters = document.querySelectorAll('.stat-number[data-count]');
+        
+        counters.forEach(counter => {
+            const target = parseInt(counter.getAttribute('data-count'));
+            let current = 0;
+            const increment = target / 60; // 60 steps
+            
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    counter.textContent = target;
+                    clearInterval(timer);
+                } else {
+                    counter.textContent = Math.floor(current);
+                }
+            }, 30); // Update every 30ms for smooth animation
+        });
+    }
+    
+    // Start animation when page loads
+    window.addEventListener('load', () => {
+        setTimeout(animateCounters, 1000);
+    });
+    </script>
 
     <!-- Final CTA -->
     <section class="final-cta">
@@ -570,20 +597,10 @@
                     </div>
                 </div>
                 <div class="footer-column">
-                    <h4>Resources</h4>
-                    <div class="footer-links">
-                        <a href="#">Blog: Legal & GovTech Insights</a>
-                        <a href="#">Security Centre</a>
-                        <a href="#">FAQs</a>
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
-                    </div>
-                </div>
-                <div class="footer-column">
                     <h4>Connect With Us</h4>
                     <p>Nyayamitra Technologies Pvt. Ltd.</p>
-                    <p>Level 10, DLF Cyber City, Phase II, Gurugram, Haryana 122002</p>
-                    <p>info@nyayamitra.com</p>
+                    <p>1135 Sector 46 Gurugram - 122003</p>
+                    <p>advnishant1291@gmail.com</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>

@@ -232,41 +232,43 @@ class NyayamitraAnimations {
         });
     }
 
-    // Counter animations
+    // Counter animations - Simplified and more reliable
     setupCounterAnimations() {
-        const counters = document.querySelectorAll('.stat-number[data-count]');
-        
-        const counterObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    this.animateCounter(entry.target);
-                    counterObserver.unobserve(entry.target);
-                }
+        // Wait for page to fully load, then start counters
+        setTimeout(() => {
+            const counters = document.querySelectorAll('.stat-number[data-count]');
+            console.log('Found counters:', counters.length);
+            
+            counters.forEach(counter => {
+                this.animateCounter(counter);
             });
-        }, { threshold: 0.5 });
-
-        counters.forEach(counter => {
-            counterObserver.observe(counter);
-        });
+        }, 1000);
     }
 
     animateCounter(counter) {
         const target = parseInt(counter.getAttribute('data-count'));
-        const duration = 2000;
-        const increment = target / (duration / 16);
+        console.log('Animating counter to:', target);
+        
+        if (isNaN(target)) {
+            console.log('Invalid target, skipping');
+            return;
+        }
+        
         let current = 0;
+        const duration = 2000; // 2 seconds
+        const steps = 60; // 60 steps for smooth animation
+        const increment = target / steps;
+        const stepTime = duration / steps;
 
-        const updateCounter = () => {
+        const timer = setInterval(() => {
             current += increment;
-            if (current < target) {
-                counter.textContent = Math.floor(current);
-                requestAnimationFrame(updateCounter);
-            } else {
+            if (current >= target) {
                 counter.textContent = target;
+                clearInterval(timer);
+            } else {
+                counter.textContent = Math.floor(current);
             }
-        };
-
-        updateCounter();
+        }, stepTime);
     }
 
     // Navbar effects
